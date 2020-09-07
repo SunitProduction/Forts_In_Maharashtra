@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Forts In Maharashtra</string>
+    <string name="Tours">Tour\'s</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="menu">Menu</string>
+    <string name="plan_and_design_amazing_tour_packages"> Plan and Design \n Amazing Tour Packages</string>
+
+    <string-array name="MasterOption">
+        <item>Select Type of Data</item>
+        <item>Tourist Place</item>
+        <item>Hotel</item>
+        <item>Tourist Agency</item>
+        <item>Guider</item>
+        <item>EDit All Data</item>
+
+    </string-array>
+
+</resources>

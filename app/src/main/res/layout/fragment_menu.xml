@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/UserImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/UserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:text="Nitesh Kamble"
+                            android:textAlignment="viewStart"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/UserEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="abcd@gmail.com"
+                            android:textAlignment="textStart"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/UserMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="9976543218"
+                            android:textAlignment="textStart"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_Edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_edit_pen" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
+            <Button
+                android:id="@+id/btn_login_signup_menu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/holo_red_light"
+                android:text="Login / Sign up"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            app:layout_constraintTop_toBottomOf="@+id/LL_login_signup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/l2">
+
+
+                <LinearLayout
+                    android:id="@+id/LL_Blog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Blogs/Vlog"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_ContactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Contact Us"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_PrivacyPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Privacy Policy"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Rate_App"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Rate the app"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_Share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Share"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LL_workwithus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tours_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:text="Work With Us"
+                        android:textAlignment="viewStart"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

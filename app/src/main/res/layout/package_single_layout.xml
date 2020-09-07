@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/packageImage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/home_back"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TV_PackageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Package Name"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/packageImage"
+            app:layout_constraintStart_toStartOf="@id/packageImage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="starting from:"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/TV_packagePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="RS 3000 /-"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TV_packagePricePer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per Person on twin sharing" />
+
+    <TextView
+        android:id="@+id/CitiesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cities:- Ratnagiri"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TV_Flight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home_black"
+            android:text="Flight"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_Hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home_black"
+            android:text="Hotel"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_Breakfast"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home_black"
+            android:text="Breakfast"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/TV_Transfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home_black"
+            android:text="Transfer"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_package"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Explore More" />
+
+</LinearLayout>

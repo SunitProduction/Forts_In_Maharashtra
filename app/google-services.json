@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1007717917940",
+    "firebase_url": "https://forts-in-maharashtra-826ca.firebaseio.com",
+    "project_id": "forts-in-maharashtra-826ca",
+    "storage_bucket": "forts-in-maharashtra-826ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007717917940:android:79c732d36770c668fb6aa1",
+        "android_client_info": {
+          "package_name": "com.example.nitesh_sunil.fortsinmaharashtra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007717917940-k259qe1jvnhibsff2v6ltqbkhtjeff01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nitesh_sunil.fortsinmaharashtra",
+            "certificate_hash": "35c69d085c641c4aa76aed6b55e53a7dc99616e3"
+          }
+        },
+        {
+          "client_id": "1007717917940-cel1leasp4t9c3na3ej1oc6f132u0b98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvjju7i1RYOPCpa3dstZHMaOVorGnUtJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007717917940-cel1leasp4t9c3na3ej1oc6f132u0b98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
